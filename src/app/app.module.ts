@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatListModule } from '@angular/material/list' // adicionei pra parar de dar um erro que nao reconhecia o material list como component
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +27,9 @@ import { MenuComponent } from './menu/menu.component';
     MatToolbarModule,
     FlexLayoutModule,
     MatListModule, // adicionei pra parar de dar um erro que nao reconhecia o material list como component
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
