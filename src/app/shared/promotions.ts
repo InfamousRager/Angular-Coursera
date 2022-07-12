@@ -1,5 +1,6 @@
 import { Promotion } from './promotion';
 
+
 export const PROMOTIONS: Promotion[] = [
     {
       id: '0',
