@@ -44,6 +44,7 @@ import { Promotion } from './shared/promotion';
 import {LeaderService} from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 import { baseURL } from './shared/baseurl';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 
 @NgModule({
@@ -80,13 +81,16 @@ import { baseURL } from './shared/baseurl';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     MatSliderModule,
-    HttpClientModule 
+    HttpClientModule ,
+    
     
   ],
-  providers: [DishService,
+  providers: [
+  DishService,
   PromotionService,
   LeaderService,
-  {provide: 'BaseURL', useValue: baseURL}
+  {provide: 'BaseURL', useValue: baseURL},
+  ProcessHTTPMsgService
 ],
 entryComponents: [
   LoginComponent
