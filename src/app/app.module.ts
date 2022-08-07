@@ -58,6 +58,7 @@ import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
     AboutComponent,
     ContactComponent,
     LoginComponent,
+   
     
   ],
   imports: [
